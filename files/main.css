@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'Miso';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Miso'), url('miso.woff') format('woff');
+}
+    
+@font-face {
+    font-family: 'Miso Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Miso Light'), url('miso-light.woff') format('woff');
+}
+    
+@font-face {
+    font-family: 'Miso Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Miso Bold'), url('miso-bold.woff') format('woff');
+}
+
+
+h1
+{
+    font-family: 'Miso Light'; 
+    font-size: 40px;
+    font-weight: normal;
+}
+
+p {
+    font-family: 'Miso';
+    font-size: 25px;
+    line-height: 1.2em;
+    padding: 30px;
+}
+
+a.p {
+    color: inherit;
+    text-underline-offset: 4px;
+    text-decoration-color: hotpink;
+    text-decoration-thickness: 2px;
+}
+
+.center {
+    text-align: center;
+}
+
+.button {
+    font-family: 'Miso Light'; 
+    font-size: 40px;
+    border-style: solid;
+    border-width: 3px;
+    color: #000;
+    text-decoration: none;
+    padding: 6px 6px 0px 6px;
+}
+
