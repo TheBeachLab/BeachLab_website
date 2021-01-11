@@ -20,21 +20,21 @@
 }
 
 
-h1
+p.title
 {
     font-family: 'Miso Light'; 
     font-size: 40px;
     font-weight: normal;
 }
 
+
 p {
     font-family: 'Miso';
     font-size: 25px;
     line-height: 1.2em;
-    padding: 30px;
 }
 
-a.p {
+a.pink {
     color: inherit;
     text-underline-offset: 4px;
     text-decoration-color: hotpink;
@@ -45,13 +45,36 @@ a.p {
     text-align: center;
 }
 
-.button {
+.wbutton {
     font-family: 'Miso Light'; 
     font-size: 40px;
     border-style: solid;
-    border-width: 3px;
-    color: #000;
+    border-width: 2px;
+    color: white;
     text-decoration: none;
-    padding: 6px 6px 0px 6px;
+    padding: 8px 10px 2px 14px;
+    margin: 35px;
 }
 
+.bbutton {
+    font-family: 'Miso Light'; 
+    font-size: 40px;
+    border-style: solid;
+    border-width: 2px;
+    color: black;
+    text-decoration: none;
+    padding: 8px 8px 2px 8px;
+}
+
+div.black {
+    padding: 30px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+div.yellow {
+    padding: 30px;
+    background-color: gold;
+    color: #333;
+}
