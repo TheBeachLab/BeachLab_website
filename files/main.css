@@ -81,19 +81,19 @@ div.yellow {
 
 .left, .right {
     float: left;
-    width: 30%; /* The width is 30%, by default */
-    padding-bottom:20px;
+    width: 35%; /* The width is 40%, by default */
+    padding-bottom:30px;
   }
 
   
   .main {
     float: left;
-    width: 40%; /* The width is 40%, by default */
-    padding-bottom: 20px;
+    width: 30%; /* The width is 20%, by default */
+    padding-bottom: 30px;
   }
   
-  /* Use a media query to add a breakpoint at 800px: */
-  @media screen and (max-width: 900px) {
+  /* Use a media query to add a breakpoint at 925px: */
+  @media screen and (max-width: 935px) {
     .left, .main, .right {
       width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
     }
