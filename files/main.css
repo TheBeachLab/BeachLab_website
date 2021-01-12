@@ -19,8 +19,9 @@
     src: local('Miso Bold'), url('miso-bold.woff') format('woff');
 }
 
-body {
+html, body {
     margin: 0;
+    height: 100%;
 }
 
 p.title
@@ -74,6 +75,7 @@ div.black {
     color: white;
     text-align: center;
     overflow: hidden;
+    height: 100%;
 }
 
 div.yellow {
