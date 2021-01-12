@@ -19,6 +19,9 @@
     src: local('Miso Bold'), url('miso-bold.woff') format('woff');
 }
 
+body {
+    margin: 0;
+}
 
 p.title
 {
