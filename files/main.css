@@ -75,7 +75,7 @@ div.black {
     color: white;
     text-align: center;
     overflow: hidden;
-    height: 100%;
+    min-height: 100%;
 }
 
 div.yellow {
