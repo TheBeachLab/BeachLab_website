@@ -54,6 +54,7 @@ a.pink {
     text-align: center;
 }
 
+
 .wbutton {
     font-family: 'Miso Light'; 
     font-size: 40px;
@@ -83,7 +84,6 @@ div.black {
     overflow: hidden; /* do not allow content to overflow outside the div */
     min-height: 100%; /* heigh is 100% at least, if the content is larger then larger */
 }
-
 
 div.yellow {
     padding: 30px;
