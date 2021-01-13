@@ -96,10 +96,17 @@ div.yellow {
     width: 30%; /* The width is 20%, by default */
     padding-bottom: 30px;
   }
-  
+
+
   /* Use a media query to add a breakpoint at 925px: */
   @media screen and (max-width: 935px) {
     .left, .main, .right {
       width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
     }
+  }
+
+  .menu {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
   }
