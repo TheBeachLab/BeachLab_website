@@ -1,3 +1,8 @@
+/* 
+THE BEACH LAB CSS STYLE
+CODED FROM SCRATCH AS I LEARN CSS
+*/
+
 @font-face {
     font-family: 'Miso';
     font-style: normal;
@@ -20,8 +25,8 @@
 }
 
 html, body {
-    margin: 0;
-    height: 100%;
+    margin: 0; /* no margins around the page */
+    height: 100%; /* expand to browser height */
 }
 
 p.title
@@ -69,14 +74,16 @@ a.pink {
     padding: 8px 8px 2px 8px;
 }
 
+/* initial block */
 div.black {
     padding: 30px;
     background-color: black;
     color: white;
     text-align: center;
-    overflow: hidden;
-    min-height: 100%;
+    overflow: hidden; /* do not allow content to overflow outside the div */
+    min-height: 100%; /* heigh is 100% at least, if the content is larger then larger */
 }
+
 
 div.yellow {
     padding: 30px;
@@ -84,13 +91,14 @@ div.yellow {
     color: #333;
 }
 
+/* float div for the left and right buttons */
 .left, .right {
     float: left;
     width: 35%; /* The width is 40%, by default */
     padding-bottom:30px;
   }
 
-  
+/* float div for the middle button */  
   .main {
     float: left;
     width: 30%; /* The width is 20%, by default */
@@ -98,15 +106,16 @@ div.yellow {
   }
 
 
-  /* Use a media query to add a breakpoint at 925px: */
+  /* Use a media query to add a breakpoint at 935px: */
   @media screen and (max-width: 935px) {
     .left, .main, .right {
-      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+      width: 100%; /* The width is 100%, when the viewport is 935px or smaller */
     }
   }
 
-  .menu {
+  /* div that holds the 3 buttons */
+  .menu {  
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: 0; /* align to the bottom of the parent div */
   }
