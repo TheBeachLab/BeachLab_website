@@ -13,8 +13,8 @@ function soltada(event) {
 	}
 }
 
-document.onkeydown = presionada;
-document.onkeyup = soltada;
+//document.onkeydown = presionada;
+//document.onkeyup = soltada;
 
 // reveal the magic
 var vald = 0;
