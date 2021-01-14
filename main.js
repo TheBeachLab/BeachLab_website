@@ -35,6 +35,8 @@ tron_audio.addEventListener('timeupdate', function () {
 	}
 });
 
+
+
 var letterd = document.getElementById('letterd');
 letterd.addEventListener('click', e => {
 	tapletter(letterd);
@@ -63,17 +65,19 @@ var lettern = document.getElementById('lettern');
 lettern.addEventListener('click', e => {
 	tapletter(lettern);
 });
-var lettern2 = document.getElementById('lettern2');
-lettern2.addEventListener('click', e => {
-	tapletter(lettern);
+document.querySelectorAll('.lettern2').forEach(item => {
+	item.addEventListener('click', e => {
+		tapletter(lettern);
+	});
 });
 var lettere = document.getElementById('lettere');
 lettere.addEventListener('click', e => {
 	tapletter(lettere);
 });
-var lettere2 = document.getElementById('lettere2');
-lettere2.addEventListener('click', e => {
-	tapletter(lettere);
+document.querySelectorAll('.lettere2').forEach(item => {
+	item.addEventListener('click', e => {
+		tapletter(lettere);
+	});
 });
 var lettery = document.getElementById('lettery');
 lettery.addEventListener('click', e => {
