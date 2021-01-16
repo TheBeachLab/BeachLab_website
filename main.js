@@ -24,7 +24,7 @@ var valn = 0;
 var vale = 0;
 var valy = 0;
 var magic_sound = new Audio('files/drum.mp3');
-var magic_color = 'orange';
+var magic_color = 'cyan';
 var tron_audio = new Audio('files/tron.mp3');
 tron_audio.loop = true;
 tron_audio.addEventListener('timeupdate', function () {
@@ -148,9 +148,11 @@ function tapletter(letter) { // This code is probably awful, I know. But it work
 	sum = vald + vali + vals + valn + vale + valy
 	if (sum == 6) { // reveal the magic
 		image = document.getElementById('logo');
-		image.src = 'img/wd.svg';
+		image.src = 'img/wd2.svg';
 		tron_audio.play();
-		var maintxt = document.getElementsById('title2');
-		maintxt.style.color = 'cyan';
+		magic_color = 'cyan;'
+		document.getElementById('title').style.color = 'cyan';
+		var spirit = document.getElementById('spirit');
+		spirit.innerHTML = "TRON MODE ACTIVATED";
 	}
 };
