@@ -27,6 +27,8 @@ CODED FROM SCRATCH AS I LEARN CSS
 html, body {
     margin: 0; /* no margins around the page */
     height: 100%; /* expand to browser height */
+    width: 100%;
+    font-family: 'Miso'
 }
 
 p.title
@@ -36,6 +38,10 @@ p.title
     font-weight: normal;
 }
 
+p.quote {
+    font-family: 'Miso Light';
+    font-style: italic; 
+}
 
 p {
     font-family: 'Miso';
@@ -43,10 +49,9 @@ p {
     line-height: 1.2em;
 }
 
-a.pink {
+a {
     color: inherit;
     text-underline-offset: 4px;
-    text-decoration-color: hotpink;
     text-decoration-thickness: 2px;
 }
 
@@ -77,12 +82,12 @@ a.pink {
 
 /* initial block */
 div.black {
-    padding: 30px;
     background-color: black;
     color: white;
     text-align: center;
+    height: 100%; /* heigh is 100% */
+    width: 100%;
     overflow: hidden; /* do not allow content to overflow outside the div */
-    min-height: 100%; /* heigh is 100% at least, if the content is larger then larger */
 }
 
 div.yellow {
@@ -91,31 +96,81 @@ div.yellow {
     color: #333;
 }
 
+div.red {
+    padding: 30px;
+    background-color: orangered;
+    color: antiquewhite;
+}
+
+div.blue {
+    padding: 30px;
+    background-color: skyblue;
+    color: #333;
+
+}
+
+div.white {
+    padding: 30px;
+    background-color: whitesmoke;
+    color: #333;
+}
+
+div.purple {
+    padding: 30px;
+    background-color: rebeccapurple;
+    color: antiquewhite;
+}
+
+div.green {
+    padding: 30px;
+    background-color: yellowgreen;
+    color: #333;
+}
+
+.top {
+    height: 30%;
+}
+
+.mid {
+    height: 40%;
+    padding-top: 15px;
+}
+
+.capsule { /* element containing the 3 buttons */
+    position: absolute;
+    top: 86%;
+    /*top: 40px; /* align to the bottom of the parent div */
+    transform: translateY(-50%);
+    width: 100%;
+
+}
+
 /* float div for the left and right buttons */
-.left, .right {
+ .left, .right {
     float: left;
-    width: 35%; /* The width is 40%, by default */
-    padding-bottom:30px;
+    width: 35%; 
   }
 
 /* float div for the middle button */  
   .main {
     float: left;
-    width: 30%; /* The width is 20%, by default */
-    padding-bottom: 30px;
+    width: 30%; 
   }
 
-
-  /* Use a media query to add a breakpoint at 935px: */
-  @media screen and (max-width: 935px) {
-    .left, .main, .right {
-      width: 100%; /* The width is 100%, when the viewport is 935px or smaller */
-    }
-  }
-
-  /* div that holds the 3 buttons */
+/* div that holds the 3 buttons */
   .menu {  
+    height: 30%;
     width: 100%;
-    position: absolute;
-    bottom: 0; /* align to the bottom of the parent div */
+    padding: 5px;
   }
+
+/* responsive web */
+/* Use a media query to add a breakpoint at some px: */
+@media screen and (max-width: 935px) {
+.left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is at breakpoint or smaller */
+  }
+.left, .main {
+    padding-bottom: 30px;
+}
+}
