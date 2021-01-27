@@ -3,6 +3,7 @@ THE BEACH LAB CSS STYLE
 CODED FROM SCRATCH AS I LEARN CSS
 */
 
+/*---- fonts ----*/
 @font-face {
     font-family: 'Miso';
     font-style: normal;
@@ -31,25 +32,24 @@ html, body {
     font-family: 'Miso'
 }
 
-p.title
-{
-    font-family: 'Miso Light'; 
-    font-size: 40px;
-    font-weight: normal;
-}
-
-p.quote {
-    font-family: 'Miso Light';
-    font-style: italic; 
-}
-
-p {
+p { /* paragraph */
     font-family: 'Miso';
     font-size: 25px;
     line-height: 1.2em;
 }
 
-a {
+p.title { /* title */
+    font-family: 'Miso Light'; 
+    font-size: 40px;
+    font-weight: normal;
+}
+
+p.quote { /*quote */
+    font-family: 'Miso Light';
+    font-style: italic; 
+}
+
+a { /*link */
     color: inherit;
     text-underline-offset: 4px;
     text-decoration-thickness: 2px;
@@ -60,7 +60,7 @@ a {
 }
 
 
-.wbutton {
+.wbutton { /* white button */
     font-family: 'Miso Light'; 
     font-size: 40px;
     border-style: solid;
@@ -70,7 +70,7 @@ a {
     padding: 8px 10px 2px 14px;
 }
 
-.bbutton {
+.bbutton { /* black button */
     font-family: 'Miso Light'; 
     font-size: 40px;
     border-style: solid;
@@ -80,8 +80,8 @@ a {
     padding: 8px 8px 2px 8px;
 }
 
-/* initial block */
-div.black {
+
+div.black { /* full page black div */
     background-color: black;
     color: white;
     text-align: center;
@@ -110,7 +110,7 @@ div.blue {
 }
 
 div.white {
-    padding: 30px;
+    padding: 30px 90px 30px 90px;
     background-color: whitesmoke;
     color: #333;
 }
@@ -127,42 +127,41 @@ div.green {
     color: #333;
 }
 
-.top {
+/*---- main page rows ----*/
+.top { /* top row */
     height: 30%;
 }
 
-.mid {
+.mid { /* middle row */
     height: 40%;
     padding-top: 15px;
 }
 
-.capsule { /* element containing the 3 buttons */
+.menu {  /* bottom div that holds the 3 buttons */
+    height: 30%;
+    width: 100%;
+    padding: 5px;
+  }
+
+.capsule { /* element containing the 3 buttons in main page */
     position: absolute;
     top: 86%;
-    /*top: 40px; /* align to the bottom of the parent div */
     transform: translateY(-50%);
     width: 100%;
 
 }
 
-/* float div for the left and right buttons */
- .left, .right {
+.left, .right { /* float div for the left and right buttons */
     float: left;
     width: 35%; 
   }
 
-/* float div for the middle button */  
-  .main {
+ 
+.main { /* float div for the middle button */ 
     float: left;
     width: 30%; 
   }
 
-/* div that holds the 3 buttons */
-  .menu {  
-    height: 30%;
-    width: 100%;
-    padding: 5px;
-  }
 
 /* responsive web */
 /* Use a media query to add a breakpoint at some px: */
