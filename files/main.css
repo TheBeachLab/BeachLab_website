@@ -1,4 +1,4 @@
-/* 
+/*
 THE BEACH LAB CSS STYLE
 CODED FROM SCRATCH AS I LEARN CSS
 */
@@ -10,14 +10,14 @@ CODED FROM SCRATCH AS I LEARN CSS
     font-weight: normal;
     src: local('Miso'), url('miso.woff') format('woff');
 }
-    
+
 @font-face {
     font-family: 'Miso Light';
     font-style: normal;
     font-weight: normal;
     src: local('Miso Light'), url('miso-light.woff') format('woff');
 }
-    
+
 @font-face {
     font-family: 'Miso Bold';
     font-style: normal;
@@ -39,14 +39,14 @@ p { /* paragraph */
 }
 
 p.title { /* title */
-    font-family: 'Miso Light'; 
+    font-family: 'Miso Light';
     font-size: 40px;
     font-weight: normal;
 }
 
 p.quote { /*quote */
     font-family: 'Miso Light';
-    font-style: italic; 
+    font-style: italic;
 }
 
 a { /*link */
@@ -61,7 +61,7 @@ a { /*link */
 
 
 .wbutton { /* white button */
-    font-family: 'Miso Light'; 
+    font-family: 'Miso Light';
     font-size: 40px;
     border-style: solid;
     border-width: 2px;
@@ -71,7 +71,7 @@ a { /*link */
 }
 
 .bbutton { /* black button */
-    font-family: 'Miso Light'; 
+    font-family: 'Miso Light';
     font-size: 40px;
     border-style: solid;
     border-width: 2px;
@@ -153,13 +153,13 @@ div.green {
 
 .left, .right { /* float div for the left and right buttons */
     float: left;
-    width: 35%; 
+    width: 35%;
   }
 
- 
-.main { /* float div for the middle button */ 
+
+.main { /* float div for the middle button */
     float: left;
-    width: 30%; 
+    width: 30%;
   }
 
 
@@ -172,4 +172,42 @@ div.green {
 .left, .main {
     padding-bottom: 30px;
 }
+}
+
+/* images */
+img.round { /* rounded images */
+  border-radius: 50%;
+}
+
+.responsive { /* responsive images */
+  width: 100%;
+  /* optional
+  max-width: 400px;
+  */
+  height: auto;
+}
+
+div.bg1 {
+	/* The image used */
+	background-image: url("img_parallax.jpg");
+}
+
+/* parallax */
+.parallax {
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
 }
