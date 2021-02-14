@@ -19,16 +19,115 @@
 	<div class="reveal">
 		<div class="slides">
 			<section>
-				<h2 class="r-fit-text">Supermaterials</h2>
+				<p class="r-fit-text">Supermaterials</p>
+
 			</section>
-			<section>Who am I?</section>
 			<section>
-				<h1>Hooke's Law</h1>
+				<h2>About me</h2>
+				<p>Francisco Sanchez</p>
 			</section>
+			<section>
+				<section>
+					<p class="r-fit-text">Materials Science</p>
+				</section>
+				<section>New compounds</section>
+				<section>metamaterials</section>
+			</section>
+			<section>
+				<section>
+					<p class="r-fit-text">Structural Engineering</p>
+				</section>
+				<section>
+					<img src="img/hooke.jpg" class="r-stretch">
+				</section>
+				<section>
+					<img src="img/newton.jpg" class="r-stretch">
+				</section>
+				<section>
+					<h2>Hooke's Law</h2>
+				</section>
+				<section>
+					<h1>Young Modulus</h1>
+				</section>
+				<section id="stretch">
+					<h2>Degrees of Freedom</h2>
+					<img src="img/dof.jpg" class="r-stretch">
+					<p>In a 3D space we have 6 DOF: 3 translations and 3 rotations</p>
+				</section>
+				<section>
+					<h2>Structural supports</h2>
+					<img src="img/supports.jpg" class="r-stretch">
+					<p>Supports constrain DOF</p>
+				</section>
+				<section>
+					<h2>Fixed support under lateral load</h2>
+					<img src="img/canti1.jpg" class="r-stretch">
+					<p>Tension in external fibers and compression in internal</p>
+				</section>
+				<section>
+					<h2>Fixed support under lateral load</h2>
+					<img src="img/canti2.jpg" class="r-stretch">
+					<p>Unwanted vertical displacement</p>
+				</section>
+				<section>
+					<h2>Fixed support under lateral load</h2>
+					<img src="img/canti3.jpg" class="r-stretch">
+					<p>Unwanted rotation</p>
+				</section>
+
+			</section>
+			<section data-background-iframe="https://www.freecadweb.org/downloads.php" data-background-interactive>
+			</section>
+			<section>
+
+				<section>Exercise 1: Flexures</section>
+				<section>
+					<h1>Beam</h1>
+				</section>
+				<section>
+					<h1>Double beam</h1>
+				</section>
+				<section>
+					<h1>1D movement</h1>
+				</section>
+				<section>
+					<h1>2D movement</h1>
+				</section>
+			</section>
+			<section>Auxetics</section>
+			<section>
+
+				<h2>Video</h2>
+				<video src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" data-autoplay></video>
+			</section>
+			<section data-background-video="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4">
+				<h2>Background Video</h2>
+			</section>
+			<section>
+				<h3>The Lorenz Equations</h3>
+
+				<div class="fragment">
+					\[\begin{aligned}
+					\dot{x} &amp; = \sigma(y-x) \\
+					\dot{y} &amp; = \rho x - y - xz \\
+					\dot{z} &amp; = -\beta z + xy
+					\end{aligned} \]
+				</div>
+			</section>
+			<section data-auto-animate>
+				<h2>HStack Example</h2>
+				<div class="r-hstack">
+					<p style="padding: 0.50em; background: #eee; margin: 0.25em">One</p>
+					<p style="padding: 0.75em; background: #eee; margin: 0.25em">Two</p>
+					<p style="padding: 1.00em; background: #eee; margin: 0.25em">Three</p>
+				</div>
+			</section>
+
 		</div>
 	</div>
 
 	<script src="dist/reveal.js"></script>
+	<script src="plugin/zoom/zoom.js"></script>
 	<script src="plugin/notes/notes.js"></script>
 	<script src="plugin/markdown/markdown.js"></script>
 	<script src="plugin/highlight/highlight.js"></script>
@@ -50,7 +149,7 @@
 				}
 			},
 			// Learn about plugins: https://revealjs.com/plugins/
-			plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath]
+			plugins: [RevealMarkdown, RevealZoom, RevealHighlight, RevealNotes, RevealMath]
 		});
 	</script>
 </body>
