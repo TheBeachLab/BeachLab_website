@@ -4,7 +4,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
+	<meta name="description" content="Design and Fabrication of Auxetics and Metamaterials">
+	<meta name="author" content="Francisco Sanchez Arroyo">
 	<title>Supermaterials</title>
 
 	<link rel="stylesheet" href="dist/reset.css">
@@ -18,11 +22,13 @@
 <body>
 	<div class="reveal">
 		<div class="slides">
+			<!-- Title -->
 			<section>
 				<p class="r-fit-text">Supermaterials</p>
 				<p>http://beachlab.org/supermaterials</p>
 
 			</section>
+			<!-- About -->
 			<section>
 				<section>
 					<p class="r-fit-text">Who is this guy?</p>
@@ -55,6 +61,7 @@
 					<p>hola at beachlab dot org</p>
 				</section>
 			</section>
+			<!-- Materials Science -->
 			<section>
 				<section>
 					<p class="r-fit-text">Materials Science</p>
@@ -77,6 +84,7 @@
 				</section>
 
 			</section>
+			<!-- Structural Engineering -->
 			<section>
 				<section>
 					<p class="r-fit-text">Structural Engineering</p>
@@ -138,7 +146,7 @@
 
 
 			</section>
-
+			<!-- Design Software -->
 			<section>
 				<section>
 					<p class="r-fit-text">Design Software</p>
@@ -155,7 +163,7 @@
 				</section>
 
 			</section>
-
+			<!-- Machines -->
 			<section>
 				<section>
 					<p class="r-fit-text">Machines can't do anything</p>
@@ -187,11 +195,11 @@
 				</section>
 
 			</section>
-
+			<!-- Flexures and Mechanisms -->
 			<section>
 
 				<section>
-					<p class="r-fit-text">Flexures</p>
+					<p class="r-fit-text">Flexures and Mechanisms</p>
 				</section>
 				<section>
 					<img src="img/cat.jpg" class="r-stretch">
@@ -267,10 +275,19 @@
 					<p>Store information in a mechanical device</p>
 				</section>
 
+
+				<section>
+					<p class="r-fit-text">Mechanisms</p>
+				</section>
+				<section>
+					<img src="img/mechanism.png" class="r-stretch">
+					<p class="r-fit-text">https://github.com/jfrohnhofen/metamaterial-mechanisms</p>
+				</section>
+
 			</section>
 
 			<section>
-
+				<!-- Kirigami -->
 				<section>
 					<p class="r-fit-text">Kirigami</p>
 				</section>
@@ -289,7 +306,7 @@
 					data-background-interactive>
 				</section>
 			</section>
-
+			<!-- Buckling-->
 			<section>
 				<section>
 					<p class="r-fit-text">Buckling</p>
@@ -309,7 +326,7 @@
 
 			</section>
 
-
+			<!-- Origami -->
 			<section>
 				<section>
 					<p class="r-fit-text">Origami</p>
@@ -319,46 +336,105 @@
 				</section>
 
 				<section>
+					<h2>Creating creases</h2>
 					<img src="img/fold.jpg" class="r-stretch">
 					<p>Laser marking technique for creases</p>
 				</section>
 
 				<section>
+					<h2>Creating creases</h2>
 					<img src="img/fold2.jpg" class="r-stretch">
 					<p>Laser dashing technique for creases</p>
 				</section>
 				<section>
-					<video src="img/twist2.mp4" data-autoplay class="r-stretch"></video>
+					<video src="img/twist2.mp4" data-autoplay loop class="r-stretch"></video>
 				</section>
 				<section>
 					<img src="img/twist.png" class="r-stretch">
-					<p class="r-fit-text">http://beachlab.org/supermaterials/files/twist.pdf</p>
+					<p class="r-fit-text">
+						<a href="http://beachlab.org/supermaterials/files/twist.pdf">
+							http://beachlab.org/supermaterials/files/twist.pdf
+						</a>
+					</p>
 				</section>
 				<section>
-					<video src="img/twist.mp4" data-autoplay class="r-stretch"></video>
+					<video src="img/twist.mp4" data-autoplay loop class="r-stretch"></video>
 				</section>
 				<section>
 					<img src="img/origami1.png" class="r-stretch">
-					<p class="r-fit-text">http://beachlab.org/supermaterials/files/origami.pdf</p>
+					<p class="r-fit-text">
+						<a
+							href="http://beachlab.org/supermaterials/files/origami.pdf">http://beachlab.org/supermaterials/files/origami.pdf</a>
+					</p>
 				</section>
 
 				<section>
 					<img src="img/origami2.png" class="r-stretch">
-					<p class="r-fit-text">http://beachlab.org/supermaterials/files/miura-ori-fold.pdf</p>
+					<p class="r-fit-text">
+						<a
+							href="http://beachlab.org/supermaterials/files/miura-ori-fold.pdf">http://beachlab.org/supermaterials/files/miura-ori-fold.pdf</a>
+					</p>
 				</section>
 			</section>
 
+			<!-- Simulation -->
 			<section>
 				<section>
-					<p class="r-fit-text">Mechanisms</p>
+					<p class="r-fit-text">Simulation</p>
 				</section>
 				<section>
-					<img src="img/mechanism.png" class="r-stretch">
-					<p class="r-fit-text">https://github.com/jfrohnhofen/metamaterial-mechanisms</p>
+					<h2>Materials Properties</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Material</th>
+								<th>Density \((kg/m^3)\)</th>
+								<th>Young's Modulus \(E (GPa)\)</th>
+								<th>Poisson Ratio \(\nu\)</th>
+
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Acrylic</td>
+								<td>\(1180\)</td>
+								<td>\(3.2\)</td>
+								<td>\(0.36\)</td>
+							</tr>
+							<tr>
+								<td>PLA</td>
+								<td>\(1240\)</td>
+								<td>\(3.64\)</td>
+								<td>\(0.36\)</td>
+							</tr>
+							<tr>
+								<td>NinjaFlex</td>
+								<td>\(1040\)</td>
+								<td>\(0.112\)</td>
+								<td>\(0.34\)</td>
+							</tr>
+							<tr>
+								<td>Silicone Rubber</td>
+								<td>\(1700\)</td>
+								<td>\(0.025\)</td>
+								<td>\(0.48\)</td>
+							</tr>
+						</tbody>
+					</table>
 				</section>
+				<section>
+					<img src="img/units.jpg" class="r-stretch">
+					<p>Beware units...</p>
+				</section>
+
+
+
+
 			</section>
 
+			<!-- AI -->
 
+			<!-- Next Steps -->
 
 		</div>
 	</div>
