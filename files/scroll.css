@@ -71,11 +71,40 @@ section {
   align-items: center;
 	height: 100vh;
   width: 100%;
-	color: black;
 }
 
-.intro {
-  background-color: black;
+.light-text{
+  color: white;
+}
+
+.dark-text{
+  color: black;
+}
+
+.gradient-violet {
+  background-image: linear-gradient(to bottom left,black, indigo);
+}
+
+.gradient-blue {
+  background-image: linear-gradient(to bottom right, blue,cyan);
+}
+
+.gradient-cyan {
+  background-image: linear-gradient(to bottom left, cyan, green);
+}
+
+.gradient-green {
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom right, green, yellow );
+}
+
+.gradient-yellow {
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom left,yellow, orange, red );
 }
 
 
@@ -99,12 +128,6 @@ img.bw { /* bw images */
   filter: grayscale(100%);
 }
 
-section.yellow {
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  background-image: linear-gradient(to bottom right, #ff3500, #ffe600);
-}
 
 
 .logo { /* logo row */
