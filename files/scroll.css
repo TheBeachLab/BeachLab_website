@@ -65,6 +65,13 @@ p { /* paragraph */
   line-height: 1.2em;
 }
 
+a { /*link */
+  color: inherit;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+}
+
+
 section {
   display: flex;
   justify-content: center;
@@ -107,6 +114,13 @@ section {
   background-image: linear-gradient(to bottom left,yellow, orange, red );
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
+.pad30 {
+  padding: 30px;
+}
 
 .intro h1 { /* title */
     font-size: 100px;
