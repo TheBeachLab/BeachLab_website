@@ -111,8 +111,7 @@ section {
   background-image: linear-gradient(to bottom left,yellow, orange, red );
 }
 
-.wrap {
-  flex-wrap: wrap;
+.responsive {
 }
 
 .pad30 {
@@ -170,7 +169,18 @@ img.bw { /* bw images */
     flex-flow: column nowrap;
     align-items: center;
     }
+  .responsive {
+    flex-flow: column nowrap;
+    align-items: center;
+    }
 }
+@media (max-width: 1200px) {
+  .responsive {
+    flex-flow: column nowrap;
+    align-items: center;
+    }
+}
+
 
 .wbutton { /* white button */
   font-family: 'Miso Light';
