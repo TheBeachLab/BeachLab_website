@@ -111,7 +111,8 @@ section {
   background-image: linear-gradient(to bottom left,yellow, orange, red );
 }
 
-.responsive {
+.wrap {
+  flex-flow: row wrap;
 }
 
 .pad30 {
@@ -162,6 +163,13 @@ img.bw { /* bw images */
   width: 100%;
 }
 
+.flex-img {
+  flex: 60%;
+}
+
+.flex-text {
+  flex: 40%;
+}
 
 /* Responsive layout - makes a one column layout instead of a two-column layout */
 @media (max-width: 800px) {
@@ -169,16 +177,12 @@ img.bw { /* bw images */
     flex-flow: column nowrap;
     align-items: center;
     }
-  .responsive {
-    flex-flow: column nowrap;
-    align-items: center;
-    }
 }
 @media (max-width: 1200px) {
-  .responsive {
-    flex-flow: column nowrap;
-    align-items: center;
+    .flex-img, .flex-text {
+      flex: 100%;
     }
+    
 }
 
 
