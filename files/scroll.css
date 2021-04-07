@@ -101,9 +101,6 @@ section {
 }
 
 .gradient-green {
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
   background-image: linear-gradient(to bottom right, green, yellow );
 }
 
@@ -164,7 +161,15 @@ img.bw { /* bw images */
   justify-content: space-evenly;
   align-content: space-around;
   width: 100%;
+}
 
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .capsule {
+    flex-flow: column nowrap;
+    align-items: center;
+    }
 }
 
 .wbutton { /* white button */
