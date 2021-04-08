@@ -142,26 +142,26 @@ section {
 }
 
 .gradient-violet {
-  background-image: linear-gradient(to bottom left,black, indigo);
+  background-image: linear-gradient(to bottom,  #db38b5,#01b3e3);
 }
 
 .gradient-blue {
-  background-image: linear-gradient(to bottom right, blue,cyan);
+  background-image: linear-gradient(to bottom, #01b3e3,#25ce7b);
 }
 
 .gradient-cyan {
-  background-image: linear-gradient(to bottom left, cyan, green);
+  background-image: linear-gradient(to bottom, #25ce7b,#fdc741);
 }
 
 .gradient-green {
-  background-image: linear-gradient(to bottom right, green, yellow );
+  background-image: linear-gradient(to bottom, #fdc741,#ff6b01);
 }
 
 .gradient-yellow {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to bottom left,yellow, orange, red );
+  background-image: linear-gradient(to bottom,#ff6b01,#fc4236);
 }
 
 .wrap {
