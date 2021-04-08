@@ -99,6 +99,7 @@ h1 {
     font-family: 'Miso Light';
     font-weight: normal;
     font-size: 20vw;
+    text-align: center;
 }
 
 /* subtitle */
@@ -173,7 +174,7 @@ section {
 
 
 
-/* images */
+/* images fx */
 img.round { /* rounded images */
   border-radius: 50%;
 }
